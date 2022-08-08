@@ -1,0 +1,211 @@
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+a:hover {color: #2698cb;}
+
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {font-family:'Noto Sans KR', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 13px; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style:none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 13px; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+button {border: 0;}
+
+/* 반응형 */
+video,img {width: 100%;}
+
+/* clearfix */
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}
+
+/* 헤더 시작 */
+#header{
+    width: 100%;
+}
+
+.container{
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.header h1{
+    float: left;
+}
+
+.header h1 em{
+    padding: 8px 0px 3px 0;
+    display: inline-block;
+}
+
+.header h1 em img{
+    width: 120px;
+}
+
+.header h1 strong{
+    display: block;
+    position: absolute;
+    left: 120px;
+    top: 35px;
+}
+
+.header h1 strong img{
+    width: 150px;
+}
+
+.header .nav{
+    float: right;
+}
+
+.header .nav ul li{
+    float: left;
+    width: 85px;
+    text-align: center;
+    justify-content: center;
+}
+
+.header .nav ul li a{
+    display: block;
+    padding: 21px 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #444;
+}
+
+.header .nav ul li:nth-of-type(7) a{
+    padding-right: 0;
+}
+
+/* 배너 시작 */
+#banner{
+    position: relative;
+}
+
+.banner_menu{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+}
+
+.banner_menu a{
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.banner_menu a:hover{
+    color: #c1c1c1;
+}
+
+.banner_menu .bannermenu_left{
+    float: left;
+}
+
+.banner_menu .bannermenu_left ul{
+    padding-top: 7px;
+}
+
+.banner_menu .bannermenu_left li{
+    display: inline;
+    margin-right: 30px;
+    position: relative;
+}
+
+.banner_menu .bannermenu_left li.all{
+ margin-right: 20px;
+}
+
+.banner_menu .bannermenu_left li.all a{
+    font-size: 14px;
+    padding: 3px 10px;
+    display: inline-block;
+    border: 1px solid #fff;
+    transition: all 0.3s;
+}
+
+.banner_menu .bannermenu_left li.all a:hover{
+    background: #ed3124;
+    color: #fff;
+    border: 1px solid #ed3124;
+}
+
+.banner_menu .bannermenu_right{
+    float: right;
+    overflow: hidden;
+}
+
+.banner_menu .bannermenu_right ul{
+    float: left;
+}
+
+.banner_menu .bannermenu_right ul:first-child{
+    padding-top: 7px;
+}
+
+.banner_menu .bannermenu_right li{
+    display: inline;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+
+.banner_menu .bannermenu_right li.line{
+    margin-right: 30px;
+}
+
+.banner_menu .bannermenu_right li.time{
+    margin-right: 10px;
+}
+
+.banner_menu .bannermenu_right li.time a{
+    display: inline-block;
+    width: 80px;
+    background: #fff;
+    color: #ed3124;
+    padding: 7px 30px 9px 30px;
+    border: 1px solid #fff;
+}
+
+.banner_menu .bannermenu_right li.fast{
+    margin-right: 0;
+}
+
+.banner_menu .bannermenu_right li.fast a{
+    display: inline-block;
+    width: 80px;
+    background: #ed3124;
+    color: #fff;
+    padding: 7px 30px 9px 30px;
+    border: 1px solid #ed3124;
+}
+
+.banner_menu li.line::after{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #fff;
+    position: absolute;
+    right: -18px;
+    top: 2px;
+}
+
