@@ -35,6 +35,43 @@ video,img {width: 100%;}
 .ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
 .ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}
 
+/* 모바일용 메뉴 */
+#mNav{
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+}
+
+.ham{
+    display: block;
+    width: 25px;
+    height: 10px;
+    padding-top: 10px 5px;
+}
+
+.ham span {display: block; width: 25px; height: 4px; background: #ed3124;}
+
+.ham span::before {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #ed3124;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+}
+
+.ham span::after {
+    content: '';
+    width: 25px;
+    height: 4px;
+    background: #ed3124;
+    position: absolute;
+    left: 0;
+    top: -8px;
+}
+
 /* 헤더 시작 */
 #header{
     width: 100%;
@@ -207,5 +244,37 @@ video,img {width: 100%;}
     position: absolute;
     right: -18px;
     top: 2px;
+}
+
+/* 미디어쿼리 */
+@media(max-width:1290px){
+    .container {width: 100%;}
+    .header .nav ul li {width: 93px;}
+    .header .nav ul li a {font-size: 15px; padding: 17px 10px;}
+    .header h1 em {padding: 5px 0 1px 0;}
+    .header h1 strong {top: 30px;}
+}
+
+@media(max-width:1024px){
+    #mNav {display: block;}
+    .nav {display: none;}
+    .row {padding: 0 24px;}
+    .header h1 {float: none; text-align: center;}
+    .header h1 strong {left: 24px; top: 20px;}
+}
+
+@media(max-width:960px){
+    
+}
+
+@media (max-width: 768px){
+    .row {padding: 0 16px;}
+    #mNav {right: 20px;}
+    .header h1 {text-align: left;}
+    .header h1 strong {display: none;}
+}
+
+@media(max-width:480px){
+    
 }
 
