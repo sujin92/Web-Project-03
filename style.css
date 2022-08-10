@@ -35,6 +35,15 @@ video,img {width: 100%;}
 .ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
 .ir_so {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;}
 
+/* 아이콘 이미지 최적화 작업 */
+.icon {background-image: url(../img/icon.png);}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 1.5dppx){
+            .icon {background-image: url(../img/icon@2.png); background-size: 500px;}
+       }
+
 /* 모바일용 메뉴 */
 #mNav{
     display: none;
@@ -142,6 +151,7 @@ video,img {width: 100%;}
     width: 100%;
     height: 100px;
     overflow: hidden;
+    z-index: 10;
 }
 
 .banner_menu a{
@@ -246,6 +256,218 @@ video,img {width: 100%;}
     top: 2px;
 }
 
+/* 슬라이드 시작 */
+.slider {
+    width: 100%;
+    height: 600px;
+}
+
+.slider .ss1{
+    background: url(img/main_slider02.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.slider .ss2{
+    background: url(img/main_slider03.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.slider .ss3{
+    background: url(img/main_slider01.jpg) no-repeat center center; 
+    background-size: cover;
+}
+
+.slider .swiper-slide h2{
+    font-size: 62px;
+    color: #fff;
+    margin-top: 200px;
+    line-height: 65px;
+    position: relative;
+    display: inline-block;
+}
+
+.slider .swiper-slide h2::after{
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(255,255,255,0.4);
+    position: absolute;
+    left: 0;
+    bottom: -18px;
+}
+
+.slider .swiper-slide h2 em{
+    display: block;
+    font-size: 59px;
+    font-weight: 100;
+}
+
+.slider .swiper-slide p{
+    font-size: 27px;
+    color: #fff;
+    padding-top: 25px;
+}
+
+/* 무비 시작 */
+.movie {
+    padding: 100px 0;
+}
+
+.movie_title {
+    margin-bottom: 60px;
+}
+
+.movie_title ul{
+    overflow: hidden;
+    width: 848px;
+    margin: 0 auto;
+}
+
+.movie_title li{
+    float: left;
+    width: 210px;
+    text-align: center;
+    border: 1px solid #c4c4c4c4;
+    margin-right: -1px;
+}
+
+.movie_title li a{
+    display: block;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #666;
+    font-weight: 700;
+}
+
+.movie_title li.active a{
+    background: #666; 
+    color: #fff;
+}
+
+.movie_chart{
+    height: 592px;
+    overflow: hidden;
+}
+
+.movie_chart > div > div > div{
+    float: left;
+    width: 292px;
+    height: 592px;
+    margin-right: 18px;
+}
+
+.movie_chart > div > div > div:last-child{
+    margin-right: 0;
+}
+
+.movie_chart > div > div > div .poster{
+    position: relative;
+}
+
+.movie_chart > div > div > div .poster img{
+    display: block;
+    cursor: pointer;
+}
+
+.movie_chart > div > div > div .poster .rank{
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.5);
+    line-height: 50px;
+    background: #ed3124;
+    text-align: center;
+}
+
+.movie_chart > div > div > div .poster .rank strong{
+    color: #fff;
+}
+
+.movie_chart > div > div > div .poster .mx{
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
+.movie_chart > div > div > div .poster .mx span {
+    width: 103px;
+    height: 25px;
+    display: block;
+}
+
+.movie_chart > div > div > div .poster .mx .m{
+    background-position: 0 -75px;
+}
+
+.movie_chart > div > div > div .poster .mx .b{
+    background-position: 0 -100px;
+}
+
+.movie_chart > div > div > div .infor{
+    background: #fff;
+    padding: 17px;
+    border: 1px solid #d9d9d9;
+}
+
+.movie_chart > div > div > div .infor h3{
+    color: #333;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.movie_chart > div > div > div .infor h3 span{
+    width: 29px;
+    height: 29px;
+    display: inline-block;
+    margin-top: 9px;
+    vertical-align: -5px;    
+}
+
+.movie_chart > div > div > div .infor h3 span.all {
+    background-position: -87px -125px;
+}
+
+.movie_chart > div > div > div .infor h3 span.a12 {
+    background-position: -58px -125px;
+}
+
+.movie_chart > div > div > div .infor h3 span.a13 {
+    background-position: 0px -125px;
+}
+
+.movie_chart > div > div > div .infor h3 span.a14 {
+    background-position: -29px -125px;
+}
+
+.movie_chart > div > div > div .infor .infor_btn{
+    overflow: hidden;
+}
+
+.movie_chart > div > div > div .infor .infor_btn a{
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    text-align: center;
+    background: #f2f2f2;
+    font-style: 18px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.movie_chart > div > div > div .infor .infor_btn a:last-child{
+    margin-right: 0;
+}
+
+.movie_chart > div > div > div .infor .infor_btn a:hover{
+    background: #ed3124;
+    font-weight: 600;
+    color: #fff;
+}
+
 /* 미디어쿼리 */
 @media(max-width:1290px){
     .container {width: 100%;}
@@ -253,6 +475,8 @@ video,img {width: 100%;}
     .header .nav ul li a {font-size: 15px; padding: 17px 10px;}
     .header h1 em {padding: 5px 0 1px 0;}
     .header h1 strong {top: 30px;}
+
+    .swiper-button-prev, .swiper-button-next {display: none;}
 }
 
 @media(max-width:1024px){
@@ -261,10 +485,17 @@ video,img {width: 100%;}
     .row {padding: 0 24px;}
     .header h1 {float: none; text-align: center;}
     .header h1 strong {left: 24px; top: 20px;}
+
+    .banner_menu .bannermenu_left ul {display: none;}
+    .banner_menu .bannermenu_right ul:first-child {display: none;}
 }
 
 @media(max-width:960px){
-    
+    .slider {height: 500px;}
+    .slider .swiper-slide h2 {margin-top: 140px; font-size: 37px;}
+    .slider .swiper-slide h2 em {font-size: 34px;}
+    .slider .swiper-slide p {font-size: 20px;}
+    .slider .swiper-slide h2::after {bottom: -10px;}
 }
 
 @media (max-width: 768px){
@@ -272,6 +503,18 @@ video,img {width: 100%;}
     #mNav {right: 20px;}
     .header h1 {text-align: left;}
     .header h1 strong {display: none;}
+}
+
+@media(max-width:600px){
+    .slider {height: 400px;}
+    .slider .swiper-slide h2 {margin-top: 100px; font-size: 30px;}
+    .slider .swiper-slide h2 em {font-size: 27px; margin-top: -10px;}
+    .slider .swiper-slide p {font-size: 16px;}
+
+    .banner_menu {top: 16px;}
+    .banner_menu .bannermenu_right li.time a {font-style: 14px; padding: 3px 5px 5px 5px; color: #fff; background: rgba(0, 0, 0, 0.6); border: solid 1px #fff;}
+    .banner_menu .bannermenu_right li.fast a {font-style: 14px; padding: 3px 5px 5px 5px; color: #fff; background: rgba(0, 0, 0, 0.6); border: solid 1px #fff;}
+    .swiper-pagination-bullet {width: 13px !important; height: 13px !important;}
 }
 
 @media(max-width:480px){
