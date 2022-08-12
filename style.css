@@ -192,6 +192,10 @@ input:checked[type=checkbox] {
     color: #444;
 }
 
+.header .nav ul li a:hover {
+    color: #ed3124;
+}
+
 .header .nav ul li:nth-of-type(7) a{
     padding-right: 0;
 }
@@ -400,6 +404,10 @@ input:checked[type=checkbox] {
     font-weight: 700;
 }
 
+.movie_title li a:hover{
+    color: #ed3124;
+}
+
 .movie_title li.active a{
     background: #666; 
     color: #fff;
@@ -521,12 +529,6 @@ input:checked[type=checkbox] {
     margin-right: 0;
 }
 
-.movie_chart > div > div > div .infor .infor_btn a:hover{
-    background: #ed3124;
-    font-weight: 600;
-    color: #fff;
-}
-
 /* 이벤트 시작 */
 .event {
     overflow: hidden;
@@ -572,10 +574,6 @@ input:checked[type=checkbox] {
 
 .opening{
     padding: 100px 0; text-align: center; color: #bb9b51;
-}
-
-.opening h2{
-
 }
 
 .opening h2 .grand{
@@ -659,6 +657,7 @@ input:checked[type=checkbox] {
     height: 500px;
     background: #ccc url(img/new01.jpg) center center;
     background-size: cover;
+    cursor: pointer;
 }
 
 .new .new_left .play {
