@@ -813,7 +813,7 @@ input:checked[type=checkbox] {
 }
 
 .help article.help_box3 {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .help article.help_box3 > div {
